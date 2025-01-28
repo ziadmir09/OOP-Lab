@@ -1,6 +1,8 @@
 class Main {
     public static void main(String[] args) {
-       // Array operations
+
+       //Sum of array values,avg, find even and odd
+
        int [] num = {5,7,8,11,17,40};
        int sum,avg; sum=avg=0;
 
