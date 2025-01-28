@@ -1,0 +1,75 @@
+class Main {
+    public static void main(String[] args) {
+       // Array operations
+       int [] num = {5,7,8,11,17,40};
+       int sum,avg; sum=avg=0;
+
+       for(int i = 0; i <num.length; i++){
+           sum= sum+num[i];
+       }
+       System.out.println(sum);
+
+       avg = sum/(num.length);
+       System.out.println(avg);
+
+       System.out.println("Even");
+       for(int i = 0; i <num.length; i++){
+           if(num[i]%2 == 0){
+               System.out.print(num[i]);
+               System.out.print(" ");
+           }
+       }
+       System.out.println(" ");
+       System.out.println("Odd");
+       for(int i = 0; i <num.length; i++){
+            if(num[i]%2 != 0){
+               System.out.print(num[i]);
+               System.out.print(" ");
+           }
+       }
+
+       // Sum of 1 to 100
+       sum=0;
+       for(int i = 1; i <= 100; i++){
+           sum= sum+i;
+       }
+       System.out.println(sum);
+
+       // Multiplication Table of 25
+       int numTable = 25; 
+       for (int i = 1; i <= 10; i++) {
+           System.out.println(numTable * i);
+       }
+
+       // Find the largest Number
+       int a=7,b=11,c=2; 
+       int max=Math.max(a,b);
+       if(max<c)
+           System.out.println(c);
+       else
+           System.out.println(max);
+
+       // Check the num Prime or Not
+       int numPrime= 12;
+       if (numPrime<= 1) {
+           System.out.println("Not Prime");
+       } else if (numPrime== 2) {
+           System.out.println("Not Prime");
+       } else if (numPrime% 2 == 0) {
+           System.out.println("Not Prime");
+       } else {
+           boolean isPrime = true;
+           for (int i = 3; i*i<= numPrime; i += 2) {
+               if (numPrime% i == 0) {
+                   isPrime = false;
+                   break;
+               }
+           }
+           if (isPrime) {
+               System.out.println("Prime");
+           } else {
+               System.out.println("Not Prime");
+           }
+       }
+    }
+}
